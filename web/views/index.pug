@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    title SnowDay Predictor
+    link(rel="stylesheet", href="/css/main.css")
+    script.
+      function goToAdmin() {
+        window.location.href = '/admin';
+      }
+
+      function goToUsers() {
+        window.location.href = '/users';
+      }
+
+  body
+    h1 Welcome to the Snow Day Predictor
+    header
+      nav
+        ul
+          li
+            button(type="button" onclick="goToAdmin()") Admin
+          li
+            button(type="button" onclick="goToUsers()") Users
+
+  block content
