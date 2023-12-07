@@ -1,2 +1,0 @@
-# SnowDayPredictor
-Project Not Finished
