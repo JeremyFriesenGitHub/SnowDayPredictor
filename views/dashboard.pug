@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet", href="/css/login.css") 
+  body
+    .container
+      .login-form
+        block content
+          h1 Welcome, #{username}!
+
+          p You have successfully logged in.
+          
+
+          //- Add a logout link
+          a(href="/logout") Logout
