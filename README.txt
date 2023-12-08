@@ -15,3 +15,4 @@ Install Instructions:
 14) You can use admin priveledges with the username: 'user' and the password of 'name', if desired. 
 15) For a full description of the site, watch the YouTube tutorial at this link below: 
 
+https://youtu.be/mQt0oo4m1po
