@@ -1,7 +1,3 @@
-101268194
-Jeremy Friesen
-
-
 Install Instructions: 
 1) Navigate to the working directory to run your 
 2) Install node for javascript.
