@@ -1,0 +1,47 @@
+doctype html
+html(lang="en")
+  head
+    title Dashboard
+    link(rel="stylesheet", href="/css/main.css")
+  body
+    header
+      h1 Weather Dashboard
+
+       if errorMessage
+            p.error #{errorMessage}
+    main
+      form(action="/dashboard", method="post")
+        input(type="text", name="city", placeholder="Enter a city")
+        input(type="submit", value="Get Weather")
+
+      if weather
+        h2.weather-header Weather in #{weather.name}:
+        p Temperature: #{weather.main.temp}°C
+        p Description: #{weather.weather[0].description}
+        p Snowday Prediction: 
+        if isSnowing
+          p.bold It's snowing now! Time to build a snowman! 
+          if weather.main.temp<-10
+            p.bold There is a good chance (depending on where you live), that there is a snowday for you tomorrow!
+          else 
+            p.bold  I wouldn't count on a snow day though...
+        else 
+          p.bold There's no snow sorry (very unlikely that there will be a snow day)! Try again later...
+        
+    footer
+      p Buttons to go back: 
+
+      
+        button.back-button(type="button", onclick="window.location='/'") Go Back Home
+       
+        button.back-button(type="button", onclick="window.location='/users'") Go Back To Users Login 
+       
+        button.back-button(type="button", onclick="window.history.back();") Previous Page 
+
+
+      
+      h3 Was this application helpful? Let us know your feedback!
+      form(action="/submit-feedback", method="post")
+        textarea(name="feedbackText", placeholder="Your feedback here", rows="4")
+        input(type="submit", value="Submit Feedback")
+

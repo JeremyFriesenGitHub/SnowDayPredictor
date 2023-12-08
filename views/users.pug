@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet", href="/css/login.css")
+  body
+    .container
+      .login-form
+        block content
+          h1 User Login
+           if errorMessage
+            p.error #{errorMessage}
+          form(action="/users", method="post", onsubmit="return validateLogin();")
+            .form-group
+              label(for="username") Username
+              input(type="text", id="username", name="username", placeholder="Enter your username")
+            .form-group
+              label(for="password") Password
+              input(type="password", id="password", name="password", placeholder="Enter your password")
+            button.login-button(type="submit") Login
+          
+          p Don't have an account? 
+            a(href="/users/register") Register
+          
+        script.
+          function validateLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username==="" || password==="") {
+              alert("Both username and password are required.");
+              return false; // Prevent form submission
+            }
+            return true; // Allow form submission
+          }
+
+        .button-spacing
+          button.back-button(type="button", onclick="window.location='/';") Go Back Home

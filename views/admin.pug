@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+  head
+    link(rel="stylesheet", href="/css/login.css")
+  body
+    .container
+      .login-form
+        block content
+          h1 Admin Login
+          if errorMessage
+            p.error #{errorMessage}
+          form(action="/admin", method="post", onsubmit="return validateLogin();")
+            .form-group
+              label(for="username") Username
+              input(type="text", id="username", name="username", placeholder="Enter your username")
+            .form-group
+              label(for="password") Password
+              input(type="password", id="password", name="password", placeholder="Enter your password")
+            button.login-button(type="submit") Login
+
+          script.
+            function validateLogin() { 
+              var username = document.getElementById("username").value;
+              var password = document.getElementById("password").value;
+
+              if (username === "" || password === "") {
+                alert("Both username and password are required.");
+                return false; 
+              }
+              return true; 
+            }
+
+          
+
+          .button-spacing
+            button.back-button(type="button", onclick="window.location='/';") Go Back Home

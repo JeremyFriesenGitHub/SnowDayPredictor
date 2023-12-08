@@ -1,0 +1,71 @@
+doctype html
+html(lang="en")
+  head
+    title Admin Dashboard
+    link(rel="stylesheet", href="/css/main.css")
+  body
+    header
+      h1 Admin Dashboard
+
+    main
+      section
+        h2.weather-header Users
+        if users && users.length
+          table
+            thead
+              tr
+                th Usernames:
+                th User IDs:
+                
+            tbody
+              each user in users
+                tr
+                  td= user.Username
+                  td= user.GUId
+                   
+        else
+          p No users found.
+
+      section
+        h2.weather-header Feedback
+        if feedback && feedback.length
+         table
+            thead
+              tr
+                th Comments: 
+                th Feedback IDs:
+                th Timestamp:
+                th User IDs:  
+            tbody
+              each f in feedback 
+                tr
+                  td= f.Text
+                  td= f.FId
+                  td= f.Timestamp
+                  td= f.GUId 
+        else
+          p No feedback found.
+
+      section
+        h2.weather-header Admins
+        if admins && admins.length
+          table
+            thead
+              tr
+                th Usernames:
+                th Admin IDs:
+                
+            tbody
+              each admin in admins
+                tr
+                  td= admin.Username
+                  td= admin.Aid
+                   
+        else
+          p No admins found (which should not be the case if you're logged in as an admin).
+
+    footer
+      p Panel For Backspace Button:
+
+   
+      button.back-button(type="button", onclick="window.history.back();") Previous Page

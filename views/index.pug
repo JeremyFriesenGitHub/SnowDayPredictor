@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    title Current Weather App and Snowday Predictor
+    link(rel="stylesheet", href="/css/main.css")
+    script.
+      function goToAdmin() {
+        window.location.href = '/admin';
+      }
+
+      function goToUsers() {
+        window.location.href = '/users';
+      }
+
+  body
+    h1 Welcome to the Current Weather App and Snowday Predictor!
+    header
+      nav
+        ul
+          li
+            button(type="button" onclick="goToAdmin()") Admin
+          li
+            button(type="button" onclick="goToUsers()") Users
+
+     
+    .image-container
+    
+      img(src="/img/snowman.jpg" alt="many snowmen standing winter christmas landscape")
+
+      img(src="/img/snowman_smile.jpg" alt="A small, happy snow man wearing a black hat and with a yellow scarf!")
