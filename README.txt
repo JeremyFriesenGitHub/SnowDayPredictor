@@ -1,5 +1,5 @@
 Install Instructions: 
-1) Navigate to the working directory to run your 
+1) Navigate to the working directory with the project
 2) Install node for javascript.
 3) Install the npm modules (npm init -y).
 4) Install Pug (npm install pug)
