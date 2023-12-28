@@ -38,7 +38,7 @@ To run this application, Docker must be installed on your local machine. We reco
 
 5. **Using Docker Desktop** (Alternative to Terminal):
    - If you prefer not to use the terminal, Docker Desktop provides a user-friendly interface.
-   - Pull the image by searching "current-weather-app" in the Images tab.
+   - Pull the image by searching "current-weather-app" in the search bar.
    - Run the image, setting the `OPENWEATHER_API_KEY` in the Optional Settings, and configure the port to `1234`.
 
 6. **Access the Application**:
