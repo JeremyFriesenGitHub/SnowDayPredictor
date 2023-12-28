@@ -34,7 +34,7 @@ To run this application, Docker must be installed on your local machine. We reco
      ```bash
      docker run -e OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY} -p 1234:1234 jeremyfriesen1/current-weather-app:Latest
      ```
-   - If you have set the environment variable, proceed to step 11.
+   - If you have set the environment variable, proceed to step 6.
 
 5. **Using Docker Desktop** (Alternative to Terminal):
    - If you prefer not to use the terminal, Docker Desktop provides a user-friendly interface.
@@ -50,6 +50,3 @@ To run this application, Docker must be installed on your local machine. We reco
 ## License
 This project is licensed under the Apache License 2.0.
 
----
-
-Feel free to adjust any details or add links (like the YouTube tutorial link) as necessary. The README should be clear, concise, and provide all the information a new user needs to get started with your application.
