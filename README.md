@@ -10,7 +10,7 @@ To run this application, Docker must be installed on your local machine. We reco
 1. **API Key Generation**:
    - Visit [OpenWeatherMap API Keys](https://home.openweathermap.org/api_keys) to generate your personal API key. Note: Activation of a new API key may take a few hours.
 
-2. **Setting Up Environment Variable**:
+2. **Setting Up Environment Variable** (go to step 5 if you don't want to set up an Environment Variable in your local machine):
    - **Windows**:
      - Open Command Prompt and type:
        ```cmd
