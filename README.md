@@ -37,7 +37,7 @@ To run this application, Docker must be installed on your local machine. Install
      ```bash
      docker stop "container_id_or_name"
      ```
-   - If you want to start the container again, you can use:
+   - If you want to start the container again (only after you have pulled the container sucessfully), you can use:
      ```bash
      docker start "container_id_or_name"
      ```
