@@ -4,48 +4,42 @@
 This single-page application leverages the OpenWeatherMap API, enabling users to log in and check the current weather for any location. The application features user registration with usernames and passwords, securely stored in a SQLite3 database. Additionally, it includes a feedback system for users to share their thoughts about the application, providing valuable insights for administrators.
 
 ## Prerequisites
-To run this application, Docker must be installed on your local machine. We recommend installing Docker Desktop for ease of use. Installation instructions can be found at [Docker Desktop Installation](https://docs.docker.com/desktop/install/windows-install/).
+To run this application, Docker must be installed on your local machine. Installing Docker Desktop is recommended for ease of use. Installation instructions can be found at [Docker Desktop Installation](https://docs.docker.com/desktop/install/windows-install/).
 
 ## Setup Instructions
 1. **API Key Generation**:
    - Visit [OpenWeatherMap API Keys](https://home.openweathermap.org/api_keys) to generate your personal API key. Note: Activation of a new API key may take a few hours.
 
-2. **Setting Up Environment Variable** (go to step 5 if you don't want to set up an Environment Variable in your local machine):
-   - **Windows**:
-     - Open Command Prompt and type:
-       ```cmd
-       setx OPENWEATHER_API_KEY "Your_API_Key_Goes_Here"
-       ```
-   - **Linux/macOS**:
-     - Open Terminal and run:
-       ```bash
-       echo 'export OPENWEATHER_API_KEY="Your_API_Key_Goes_Here"' >> ~/.bashrc
-       source ~/.bashrc
-       ```
-
-3. **Pull Docker Image**:
+2. **Pull Docker Image** (go to step 4 if you don't want to set up an Environment Variable in your local machine):
    - Run the following command:
      ```bash
      docker pull jeremyfriesen1/current-weather-app:Latest
      ```
 
-4. **Run the Application**:
+3. **Run the Application**:
    - Execute:
      ```bash
-     docker run -e OPENWEATHER_API_KEY=${OPENWEATHER_API_KEY} -p 1234:1234 jeremyfriesen1/current-weather-app:Latest
+     docker run -d -e OPENWEATHER_API_KEY="your_api_key" -p 1234:1234 jeremyfriesen1/current-weather-app:Latest
      ```
-   - If you have set the environment variable, proceed to step 6.
+   - You should see your container id appear after this, if successful. The container is now running on your local machine. Proceed to Step 5. 
 
-5. **Using Docker Desktop** (Alternative to Terminal):
+4. **Using Docker Desktop** (Alternative to Terminal):
    - If you prefer not to use the terminal, Docker Desktop provides a user-friendly interface.
    - Pull the image by searching "current-weather-app" in the search bar of the Docker Desktop.
    - Run the image, setting the `OPENWEATHER_API_KEY` in the Optional Settings as an environment variable, and configure the port to `1234`.
 
-6. **Access the Application**:
+5. **Access the Application**:
    - Open a web browser and navigate to [http://localhost:1234](http://localhost:1234) or [http://localhost:1234/index](http://localhost:1234/index).
 
-7. **Tutorial**:
-   - For a comprehensive walkthrough, watch our YouTube tutorial [here](#).
+6. **Close the Container**:
+   - Make sure to close your container once you are done with the application.
+   - Run the following command:
+     ```bash
+     docker stop "container_id_or_name"
+     ```
+     
+8. **Tutorial**:
+   - For a comprehensive walkthrough, watch my YouTube tutorial [here](#).
 
 ## License
 This project is licensed under the Apache License 2.0.
