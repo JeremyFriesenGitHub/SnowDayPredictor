@@ -51,14 +51,14 @@ To run this application, Docker must be installed on your local machine. Install
      ```
      
 7. **Remove the image** (optional):
-- If you need to remove the image, you can run the following command:
-```bash
-docker rmi "image_id"
-```
-- To get the ids of your images, you can use the command:
-```bash
-docker images
-```
+   - If you need to remove the image, you can run the following command:
+   ```bash
+   docker rmi "image_id"
+   ```
+   - To get the ids of your images, you can use the command:
+   ```bash
+   docker images
+   ```
 
 8. **Tutorial**:
    - For a comprehensive walkthrough, watch my YouTube tutorial [here](#).
