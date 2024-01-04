@@ -31,11 +31,19 @@ To run this application, Docker must be installed on your local machine. Install
 5. **Access the Application**:
    - Open a web browser and navigate to [http://localhost:1234](http://localhost:1234) or [http://localhost:1234/index](http://localhost:1234/index).
 
-6. **Close the Container**:
+6. **Stop the Container**:
    - Make sure to close your container once you are done with the application.
    - Run the following command:
      ```bash
      docker stop "container_id_or_name"
+     ```
+   - If you want to start the container again, you can use:
+     ```bash
+     docker start "container_id_or_name"
+     ```
+   - If you want to find your container id, you can use the following:
+     ```bash
+     docker ps -a
      ```
      
 8. **Tutorial**:
