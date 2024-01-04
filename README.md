@@ -8,7 +8,7 @@ To run this application, Docker must be installed on your local machine. Install
 
 ## Setup Instructions
 1. **API Key Generation**:
-   - Visit [OpenWeatherMap API Keys](https://home.openweathermap.org/api_keys) to generate your personal API key. Note: Activation of a new API key may take a few hours.
+   - Visit [OpenWeatherMap API Keys](https://home.openweathermap.org/api_keys) to generate your personal API key (under My API keys). Note: Activation of a new API key may take a few hours.
 
 2. **Pull Docker Image** (go to step 4 if you don't want to set up an Environment Variable in your local machine):
    - Run the following command:
