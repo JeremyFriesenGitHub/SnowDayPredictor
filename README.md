@@ -41,7 +41,7 @@ To run this application, Docker must be installed on your local machine. Install
      ```bash
      docker start "container_id_or_name"
      ```
-   - If you want to find your container id, you can use the following:
+   - If you want to find your container ID, you can use the following:
      ```bash
      docker ps -a
      ```
@@ -55,7 +55,7 @@ To run this application, Docker must be installed on your local machine. Install
      ```bash
      docker rmi "image_id"
      ```
-   - If you want to get the image id, you can use the command:
+   - If you want to get the IDs of your images, you can use the command:
      ```bash
      docker images
      ```
