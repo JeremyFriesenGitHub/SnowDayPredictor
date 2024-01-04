@@ -33,7 +33,7 @@ To run this application, Docker must be installed on your local machine. Install
 
 6. **Stop, Start and Remove the Container**:
    - Make sure to close your container once you are done with the application.
-   - Run the following command:
+   - Run the following command to stop running the container:
      ```bash
      docker stop "container_id_or_name"
      ```
