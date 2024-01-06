@@ -1,7 +1,7 @@
 # Weather App and Snow Day Project
 
 ## Description
-This single-page application leverages the OpenWeatherMap API, enabling users to log in and check the current weather for any location. The application features user registration with usernames and passwords, securely stored in a SQLite3 database. Additionally, it includes a feedback system for users to share their thoughts about the application, providing valuable insights for administrators.
+This single-page application uses the OpenWeatherMap API, enabling users to log in and check the current weather for any location. The application features user registration with usernames and passwords, securely stored in a SQLite3 database. Additionally, it includes a feedback system for users to share their thoughts about the application, providing valuable insights for administrators.
 
 ## Prerequisites
 To run this application, Docker must be installed on your local machine. Installing Docker Desktop is recommended for ease of use. Installation instructions can be found at [Docker Desktop Installation](https://docs.docker.com/desktop/install/windows-install/).
@@ -63,7 +63,7 @@ To run this application, Docker must be installed on your local machine. Install
    
 
 8. **Tutorial**:
-   - For a comprehensive walkthrough, watch my YouTube tutorial [here](#).
+   - For a comprehensive walkthrough, you can watch a YouTube tutorial [here](https://youtu.be/6tFc3_HMQyU).
 
 ## License
 This project is licensed under the Apache License 2.0.
